@@ -9,6 +9,7 @@ window.addEventListener("load", function(){
 $(".loginDiv").hide();
 $(".createDiv").hide();
 $(".onlinePlayers").hide();
+$(".tic-tac-toe").hide();
 
 // Custom animations. Works with all browsers.
 $.fn.extend({
@@ -46,3 +47,10 @@ $(".welcomeCenter").click(function(){
   $(".onlinePlayers").hide();
   $(".pongGif").show();
 });
+
+
+$(".sendPlayRequest").click(function(){
+  $(".tic-tac-toe").show();
+  $(".onlinePlayers").hide();
+})
+
