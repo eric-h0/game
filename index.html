@@ -15,6 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- Local css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
   </head>
   <body>
 
@@ -25,15 +28,15 @@
         <div class="card-content white-text">
 
         <!-- Card title -->
-        <h3 class="center-align welcomeCenter">Game^2</h3>
+        <h3 class="center-align welcomeCenter animated pulse">Game^2</h3>
 
         <!-- Pong gif -->
-        <div class="card-image">
+        <div class="card-image animated pulse">
               <img src="http://pages.uoregon.edu/duckball/html/pong.gif"><br>
         </div>
           
           <!-- Social feed -->
-          <div class="row social-feed">
+          <div class="row social-feed animated pulse">
             <div class="col s12 m12">
             <h5>Recent Games Feed:</h5>
               <div class="card-panel orange accent-4 z-depth-5">
@@ -51,7 +54,7 @@
           <!-- End of social feed -->
 
           <!-- loginDiv -->
-          <div class="row loginDiv">
+          <div class="row loginDiv animated bounceIn">
             <p class="center-align">Login with your credentials.<br><br>
              <div class="col s12 m12">
               <div class="card-panel black z-depth-3">
@@ -59,8 +62,10 @@
                 <input placeholder="Username:" id="username" type="text" class="validate">
                 <input placeholder="Password:" id="password" type="text" class="validate">
                 </span>
-                <!-- Submit button -->
-                <a class="waves-effect waves-light btn">Submit</a>
+                <!-- Submit button for login -->
+                <div class="card-action center-align">
+                  <a id="loginSubmit" href="#">Submit</a>
+                </div>
 
               </div>
             </div>
@@ -68,6 +73,8 @@
 
           </p>
         </div>
+
+        <!-- Login and Create Buttons -->
         <div class="card-action center-align welcomeButtons">
           <a id="loginButton" href="#">Login</a>
           <a id="createButton" href="#">Create</a>
