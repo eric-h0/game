@@ -2,8 +2,9 @@ html {
   background-color: orange;
 }
 
+/*Instead of flashing a white screen, an orange screen is shown while the page loads.*/
 div#load_screen{
-  background: #000;
+  background: orange;
   opacity: 1;
   position: fixed;
   z-index:10;
