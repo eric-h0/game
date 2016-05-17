@@ -8,6 +8,7 @@ window.addEventListener("load", function(){
 
 $(".loginDiv").hide();
 $(".createDiv").hide();
+$(".onlinePlayers").hide();
 
 // Custom animations. Works with all browsers.
 $.fn.extend({
@@ -27,10 +28,15 @@ $("#loginButton").click(function(){
 });
 
 $("#createButton").click(function(){
-  // Connected
   $(".createDiv").show();
   $(".welcomeButtons").hide();
   $(".social-feed").hide();
+});
+
+$("#loginSubmit").click(function(){
+  $(".pongGif").hide();
+  $(".loginDiv").hide();
+  $(".onlinePlayers").show();
 });
 
 $(".welcomeCenter").click(function(){
@@ -38,4 +44,6 @@ $(".welcomeCenter").click(function(){
   $(".loginDiv").hide();
   $(".createDiv").hide();
   $(".welcomeButtons").show();
+  $(".onlinePlayers").hide();
+  $(".pongGif").show();
 });
