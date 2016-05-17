@@ -21,7 +21,6 @@ $.fn.extend({
 });
 
 $("#loginButton").click(function(){
-  // Connected
   $(".loginDiv").show();
   $(".welcomeButtons").hide();
   $(".social-feed").hide();
