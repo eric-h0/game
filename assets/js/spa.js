@@ -1,6 +1,7 @@
 // Successfully connected.
 
 $(".loginDiv").hide();
+$(".createDiv").hide();
 
 // Custom animations. Works with all browsers.
 $.fn.extend({
@@ -21,10 +22,14 @@ $("#loginButton").click(function(){
 
 $("#createButton").click(function(){
   // Connected
+  $(".createDiv").show();
+  $(".welcomeButtons").hide();
+  $(".social-feed").hide();
 });
 
 $(".welcomeCenter").click(function(){
   $(".social-feed").show();
   $(".loginDiv").hide();
+  $(".createDiv").hide();
   $(".welcomeButtons").show();
 });
