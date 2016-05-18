@@ -49,7 +49,6 @@ $(".welcomeCenter").click(function(){
   $(".pongGif").show();
   $(".game").hide();
   $(".icon").css("width", "100%")
-
 });
 
 $(".sendPlayRequest").click(function(){
