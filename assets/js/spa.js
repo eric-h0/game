@@ -50,7 +50,6 @@ $(".welcomeCenter").click(function(){
   $(".game").hide();
 });
 
-
 $(".sendPlayRequest").click(function(){
   $(".rps").show();
   $(".onlinePlayers").hide();

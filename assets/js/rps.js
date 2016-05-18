@@ -14,7 +14,7 @@ $('.choice').click(function() {
   }
   var winner = compare(user, computer);
   console.log(winner);
-  $("h5").html(winner.str);
+  $("h6").html(winner.str);
   $('.choice').css("box-shadow", "none");
   if (winner.ner == "tie") {
     $(this).css("box-shadow", "0px 0px 1px 1px #F2E8C4");
