@@ -6,22 +6,22 @@ $('.choice').click(function() {
   computer = Math.random();
 
   if (computer <= 1 / 3) {
-    computer = "rock";
+    computer = "charmander";
   } else if (computer < 2 / 3) {
-    computer = "scissors";
+    computer = "bulbasaur";
   } else {
-    computer = "paper";
+    computer = "squirtle";
   }
   var winner = compare(user, computer);
   console.log(winner);
   $("h5").html(winner.str);
   $('.choice').css("box-shadow", "none");
   if (winner.ner == "tie") {
-    $(this).css("box-shadow", "0px 0px 25px 10px #F2E8C4");
+    $(this).css("box-shadow", "0px 0px 1px 1px #F2E8C4");
   } else if (winner.ner == "win") {
-    $(this).css("box-shadow", "0px 0px 25px 10px #3EC9A7");
+    $(this).css("box-shadow", "0px 0px 1px 1px #3EC9A7");
   } else {
-    $(this).css("box-shadow", "0px 0px 25px 10px #E32B09");
+    $(this).css("box-shadow", "0px 0px 1px 1px #E32B09");
   }
 
 });
@@ -31,36 +31,36 @@ var compare = function(user, computer) {
     str: "",
     ner: ""
   }
-  var rock = "Rock crushes scissors."
-  var paper = "Paper covers rock."
-  var scissors = "Scissors cut paper."
+  var charmander = "Charmander embered Bulbasaur."
+  var squirtle = "Squirtle water-gunned Charmander."
+  var bulbasaur = "Bulbasaur razer-leafed Squirtle."
   var win = "You win!"
-  var lose = "You lose..."
+  var lose = "You lose."
   if (user === computer) {
     obj.str = "The result is a tie.";
     obj.ner = "tie";
-  } else if (user === "rock") {
-    if (computer === "scissors") {
-      obj.str = rock + " " + win;
+  } else if (user === "charmander") {
+    if (computer === "bulbasaur") {
+      obj.str = charmander + " " + win;
       obj.ner = "win";
     } else {
-      obj.str = paper + " " + lose;
+      obj.str = squirtle + " " + lose;
       obj.ner = "lose";
     }
-  } else if (user === "paper") {
-    if (computer === "rock") {
-      obj.str = paper + " " + win;
+  } else if (user === "squirtle") {
+    if (computer === "charmander") {
+      obj.str = squirtle + " " + win;
       obj.ner = "win";
     } else {
-      obj.str = scissors + " " + lose;
+      obj.str = bulbasaur + " " + lose;
       obj.ner = "lose";
     }
-  } else if (user === "scissors") {
-    if (computer === "rock") {
-      obj.str = rock + " " + lose;
+  } else if (user === "bulbasaur") {
+    if (computer === "charmander") {
+      obj.str = charmander + " " + lose;
       obj.ner = "lose";
     } else {
-      obj.str = scissors + " " + win;
+      obj.str = bulbasaur + " " + win;
       obj.ner = "win";
     }
   }
