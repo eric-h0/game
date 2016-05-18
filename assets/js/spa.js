@@ -10,6 +10,7 @@ $(".loginDiv").hide();
 $(".createDiv").hide();
 $(".onlinePlayers").hide();
 $(".tic-tac-toe").hide();
+$(".game").hide();
 
 // Custom animations. Works with all browsers.
 $.fn.extend({
@@ -46,11 +47,12 @@ $(".welcomeCenter").click(function(){
   $(".welcomeButtons").show();
   $(".onlinePlayers").hide();
   $(".pongGif").show();
+  $(".game").hide();
 });
 
 
 $(".sendPlayRequest").click(function(){
-  $(".tic-tac-toe").show();
+  $(".rps").show();
   $(".onlinePlayers").hide();
 })
 
