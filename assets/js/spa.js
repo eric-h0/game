@@ -48,10 +48,13 @@ $(".welcomeCenter").click(function(){
   $(".onlinePlayers").hide();
   $(".pongGif").show();
   $(".game").hide();
+  $(".icon").css("width", "100%")
+
 });
 
 $(".sendPlayRequest").click(function(){
   $(".rps").show();
   $(".onlinePlayers").hide();
+  $(".icon").css("width", "40%")
 })
 
