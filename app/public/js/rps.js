@@ -33,7 +33,7 @@ var compare = function(user, computer) {
   }
   var charmander = "Charmander embered Bulbasaur."
   var squirtle = "Squirtle water-gunned Charmander."
-  var bulbasaur = "Bulbasaur razer-leafed Squirtle."
+  var bulbasaur = "Bulbasaur razor-leafed Squirtle."
   var win = "You win!"
   var lose = "You lose."
   if (user === computer) {

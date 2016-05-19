@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <!-- Animate.css -->
     <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <!-- TTT Logic -->
     <link rel="stylesheet" type="text/css" href="/css/ttt.css">
     <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css'>
@@ -110,20 +111,13 @@
                             </tr>
                         </thead>
                         <tbody id="playersTable">
-                            <tr>
-                                <td>Alan</td>
-                                <td><a class="waves-effect waves-light btn sendPlayRequest">Play</a></td>
-                            </tr>
-                            <tr>
-                                <td>Jonathan</td>
-                                <td><a class="waves-effect waves-light btn sendPlayRequest">Play</a></td>
-                            </tr>
+                        <!-- Online players shoot here -->
                         </tbody>
                     </table>
                 </p>
             </div>
             <div class="card-action center-align">
-                <a href="#">Random player</a>
+                <a id="randomPlayer" href="#">Random player</a>
             </div>
         </div>
     </div>
@@ -136,13 +130,12 @@
     <div class="col s12 m4 l2"></div>
     <div class="col s12 m4 l8">
     <p>
-    <a class="waves-effect waves-light red btn modal-trigger animated pulse" href="#modal1">View Leaderboard</a>
+    <a class="waves-effect waves-light red btn modal-trigger animated pulse z-depth-5" href="#modal1">View Leaderboard</a>
     </p>
     </div>
     <div class="col s12 m4 l2"></div>
 </div>
  
-
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
@@ -175,6 +168,37 @@
       </table>
     </div>
   </div>
+
+<!-- Chat modal button -->
+<div class="row modal-button chatButton">
+    <div class="col s12"></div>
+    <div class="col s12 m4 l2"></div>
+    <div class="col s12 m4 l8">
+    <p>
+    <a class="waves-effect waves-light blue btn modal-trigger animated pulse z-depth-5" href="#modal2">Open Chat</a>
+    </p>
+    </div>
+    <div class="col s12 m4 l2"></div>
+</div>
+
+<!-- Modal Structure -->
+
+
+<div id="modal2" class="modal bottom-sheet">
+<div class="modal-content">
+<div id="chat-container">
+    <div class='chat-menu'>
+        <!-- <input type='text' id='nameInput' placeholder='Enter a Username...'> -->
+        <ul id='messages' class="chat-messages"></ul>
+        <label for="nameInput" class="messages">Message:</label>
+        <input type='text' id='messageInput' placeholder='Type a Message...'>
+    </div>
+</div>
+
+</div>
+</div>
+      
+
 
 
     <!-- Tic Tac Toe -->

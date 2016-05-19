@@ -23,10 +23,69 @@ div#load_screen > div#loading{
   background-color: purple
 }
 
+#modal2 {
+  background-color: black
+}
+
+#nameInput {
+  color: white;
+}
+
 .modal-trigger {
   width: 100%
 }
 
 .modal-footer {
   background-color: gray
+}
+
+#chat-container,
+#loginform {
+    margin: 0 auto;
+    background: gray;
+    opacity: ;
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    text-align: center;
+}
+
+#username {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.chat-messages {
+    text-align: left;
+    margin: 0 auto;
+    /*margin-bottom: 15px;*/
+    /*margin-top: 15px;*/
+    padding: 10px;
+    background: white;
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    overflow: auto;
+    color: black;
+}
+
+#messageInput {
+    width: 180px;
+    height: 28px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.messages {
+    margin-top: -10px;
+}
+
+#menu {
+    padding: 12.5px 25px 12.5px 25px;
+}
+
+.msgln {
+    margin: 0 0 2px 0;
 }
