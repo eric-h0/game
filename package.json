@@ -1,5 +1,5 @@
 {
-  "name": "playground",
+  "name": "battleground",
   "version": "1.0.0",
   "description": "social gaming app",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Eric Ho",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.1",
@@ -16,5 +16,14 @@
     "firebase": "^2.4.2",
     "mysql": "^2.10.2",
     "sequelize": "^3.23.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-h0/game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eric-h0/game/issues"
+  },
+  "homepage": "https://github.com/eric-h0/game#readme"
 }

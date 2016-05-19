@@ -30,102 +30,153 @@
     <div id="loading"></div>
 </div>
 
-    <!-- Game Squared Card -->
-    <div class="row">
-        <div class="col s12 m12">
-            <div class="card grey darken-3 z-depth-5">
-                <div class="card-content white-text">
+<!-- Game Squared Card -->
+<div class="row">
+    <div class="col s12 m12">
+        <div class="card grey darken-3 z-depth-5">
+            <div class="card-content white-text">
                 
-                    <!-- Card title -->
-                    <h3 class="center-align welcomeCenter animated pulse"><img class="z-depth-5 icon" width="100%" height="auto" src="/images/photo-main.png"></h3>
+<!-- Card title -->
+<h3 class="center-align welcomeCenter animated pulse"><img class="z-depth-5 icon" width="100%" height="auto" src="/images/photo-main.png"></h3>
 
              
-                    <!-- Social feed -->
-                    <div class="row social-feed animated pulse">
-                        <div class="col s12 m12">
-                            <h5>Recent Games Feed:</h5>
-                            <div class="card-panel orange accent-4 z-depth-5">
-                                <span class="white-text">
-                                  <!-- winner "beat" loser "in" gameName -->
-                                  - Al beat Eric in Tic-Tac Toe<br>
-                                  - Adam beat Al in Pong<br>
-                                  - Eric beat Adam in Flappy Bird<br>
-                                  - winner "beat" loser "in" gameName<br>
-                                  - Five of these items should suffice
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of social feed -->
-                    <!-- loginDiv -->
-                    <div class="row loginDiv animated bounceIn">
-                        <p class="center-align">Login with your credentials.</p>
-                        <div class="col s12 m12">
-                            <div class="card-panel black z-depth-3">
-                                <span class="white-text">
-      <input placeholder="Username:" id="ScreenName" type="text" class="validate">
-      <input placeholder="Password:" id="password" type="text" class="validate">
-      </span>
-                                <!-- Submit button for login -->
-                                <div class="card-action center-align">
-                                    <a id="loginSubmit" href="#">Submit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Create Div -->
-                    <div class="row createDiv animated bounceIn">
-                        <p class="center-align">Create an account.</p>
-                        <div class="col s12 m12">
-                            <div class="card-panel black z-depth-3">
-                                <span class="white-text">
-        <input placeholder="Username:" id="newScreenName" type="text" class="validate">
-        <input placeholder="Password:" id="newPassword" type="text" class="validate">
-        <input placeholder="Confirm your password:" id="confirmPassword" type="text" class="validate">
-        </span>
-                                <!-- Submit button for login -->
-                                <div class="card-action center-align">
-                                    <a id="createSubmit" href="#">Submit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game center -->
-                    <div class="row onlinePlayers animated pulse ">
-                        <div class="col s12 m12">
-                            <div class="card blue-grey darken-1 z-depth-5">
-                                <div class="card-content white-text">
-                                    <span class="card-title"><center>Gamers online</center></span>
-                                    <p>
-                                        <!-- Run a for-loop in jQuery to assign ID's to each play button. -->
-                                        <table class="centered">
-                                            <thead>
-                                                <tr>
-                                                    <th data-field="name">Name</th>
-                                                    <th data-field="playRequest">Send Play Request</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="playersTable">
-                                                <tr>
-                                                    <td>Alan</td>
-                                                    <td><a class="waves-effect waves-light btn sendPlayRequest">Play</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jonathan</td>
-                                                    <td><a class="waves-effect waves-light btn sendPlayRequest">Play</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </p>
-                                </div>
-                                <div class="card-action center-align">
-                                    <a href="#">Random player</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Game -->
+<!-- Social feed -->
+<div class="row social-feed animated pulse">
+    <div class="col s12 m12">
+        <h5>Recent Games Feed:</h5>
+        <div class="card-panel orange accent-4 z-depth-5">
+            <span class="white-text">
+              <!-- winner "beat" loser "in" gameName -->
+              - Al beat Eric in Tic-Tac Toe<br>
+              - Adam beat Al in Pong<br>
+              - Eric beat Adam in Flappy Bird<br>
+              - winner "beat" loser "in" gameName<br>
+              - Five of these items should suffice
+            </span>
+        </div>
+    </div>
+</div>
+<!-- End of social feed -->
 
+<!-- loginDiv -->
+<div class="row loginDiv animated bounceIn">
+    <p class="center-align">Login with your credentials.</p>
+    <div class="col s12 m12">
+        <div class="card-panel black z-depth-3">
+            <span class="white-text">
+            <input placeholder="Username:" id="ScreenName" type="text" class="validate">
+            <input placeholder="Password:" id="password" type="text" class="validate">
+            </span>
+            <!-- Submit button for login -->
+            <div class="card-action center-align">
+                <a id="loginSubmit" href="#">Submit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Div -->
+<div class="row createDiv animated bounceIn">
+    <p class="center-align">Create an account.</p>
+    <div class="col s12 m12">
+        <div class="card-panel black z-depth-3">
+            <span class="white-text">
+            <input placeholder="Username:" id="newScreenName" type="text" class="validate">
+            <input placeholder="Password:" id="newPassword" type="text" class="validate">
+            <input placeholder="Confirm your password:" id="confirmPassword" type="text" class="validate">
+            </span>
+            <!-- Submit button for login -->
+            <div class="card-action center-align">
+                <a id="createSubmit" href="#">Submit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Game center -->
+<div class="row onlinePlayers animated pulse ">
+    <div class="col s12 m12">
+        <div class="card blue-grey darken-1 z-depth-5">
+            <div class="card-content white-text">
+                <span class="card-title"><center>Gamers online</center></span>
+                <p>
+                    <!-- Run a for-loop in jQuery to assign ID's to each play button. -->
+                    <table class="centered">
+                        <thead>
+                            <tr>
+                                <th data-field="name">Name</th>
+                                <th data-field="playRequest">Send Play Request</th>
+                            </tr>
+                        </thead>
+                        <tbody id="playersTable">
+                            <tr>
+                                <td>Alan</td>
+                                <td><a class="waves-effect waves-light btn sendPlayRequest">Play</a></td>
+                            </tr>
+                            <tr>
+                                <td>Jonathan</td>
+                                <td><a class="waves-effect waves-light btn sendPlayRequest">Play</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+            <div class="card-action center-align">
+                <a href="#">Random player</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Game -->
+
+<!-- Leaderboard -->
+<div class="row modal-button">
+    <div class="col s12"></div>
+    <div class="col s12 m4 l2"></div>
+    <div class="col s12 m4 l8">
+    <p>
+    <a class="waves-effect waves-light red btn modal-trigger" href="#modal1">View Leaderboard</a>
+    </p>
+    </div>
+    <div class="col s12 m4 l2"></div>
+</div>
+ 
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4 class="center-align">Leaderboard</h4>
+            <table class="centered">
+        <thead>
+          <tr>
+              <th data-field="rank">Rank</th> 
+              <th data-field="id">Name</th>
+              <th data-field="name">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Eric</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Al</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Adam</td>
+            <td>200</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+    <!-- Tic Tac Toe -->
     <div class="tic-tac-toe game">
         <input id="block1-1-1" type="radio" class="player-1 left first-column top first-row first-diagonal turn-1" />
         <label for="block1-1-1" class="turn-1"></label>
@@ -294,7 +345,7 @@
         </div>
     </div>
 
-
+<!-- RPS Pokémon Game -->
 <div class="rps game">
 <header>
   <div class = "wrapper">
@@ -309,28 +360,29 @@
 </div>
 
 
-                    <!-- Make these modals. -->
-                    <!-- Leaderboards -->
-                    <!-- Chat -->
-                </div>
-                <!-- End of Card Content -->
-                <!-- Login and Create Buttons -->
-                <div class="card-action center-align welcomeButtons">
-                    <a id="loginButton" href="#">Login</a>
-                    <a id="createButton" href="#">Create</a>
-                </div>
-            </div>
+
+</div>
+<!-- End of Card Content -->
+
+
+<!-- Login and Create Buttons -->
+<div class="card-action center-align welcomeButtons">
+    <a id="loginButton" href="#">Login</a>
+    <a id="createButton" href="#">Create</a>
+</div>
+
+
         </div>
     </div>
-    <!--Import jQuery before materialize.js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/spa.js"></script>
-    <script type="text/javascript" src="js/rps.js"></script>
+</div>
+
+
+<!--Import jQuery before materialize.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/spa.js"></script>
+<script type="text/javascript" src="js/rps.js"></script>
  
 
 </body>
-
-
-
 </html>

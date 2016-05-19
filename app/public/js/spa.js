@@ -1,5 +1,10 @@
 // Successfully connected.
 
+ $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
 // Loading screen
 window.addEventListener("load", function(){
   var load_screen = document.getElementById("load_screen");
