@@ -2548,7 +2548,7 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"],
-input[type="  "] {
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -5902,17 +5902,17 @@ textarea.materialize-textarea {
   /* prevents text jump on Enter keypress */
 }
 
-/*    Buttons
+/* Radio Buttons
    ========================================================================== */
-[type="  "]:not(:checked),
-[type="  "]:checked {
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
   position: absolute;
   left: -9999px;
   opacity: 0;
 }
 
-[type="  "]:not(:checked) + label,
-[type="  "]:checked + label {
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
@@ -5928,8 +5928,8 @@ textarea.materialize-textarea {
           user-select: none;
 }
 
-[type="  "] + label:before,
-[type="  "] + label:after {
+[type="radio"] + label:before,
+[type="radio"] + label:after {
   content: '';
   position: absolute;
   left: 0;
@@ -5942,85 +5942,85 @@ textarea.materialize-textarea {
 }
 
 /* Unchecked styles */
-[type="  "]:not(:checked) + label:before,
-[type="  "]:not(:checked) + label:after,
-[type="  "]:checked + label:before,
-[type="  "]:checked + label:after,
-[type="  "].with-gap:checked + label:before,
-[type="  "].with-gap:checked + label:after {
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:before,
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
   border-radius: 50%;
 }
 
-[type="  "]:not(:checked) + label:before,
-[type="  "]:not(:checked) + label:after {
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:not(:checked) + label:after {
   border: 2px solid #5a5a5a;
 }
 
-[type="  "]:not(:checked) + label:after {
+[type="radio"]:not(:checked) + label:after {
   z-index: -1;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
 
 /* Checked styles */
-[type="  "]:checked + label:before {
+[type="radio"]:checked + label:before {
   border: 2px solid transparent;
 }
 
-[type="  "]:checked + label:after,
-[type="  "].with-gap:checked + label:before,
-[type="  "].with-gap:checked + label:after {
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
   border: 2px solid #26a69a;
 }
 
-[type="  "]:checked + label:after,
-[type="  "].with-gap:checked + label:after {
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
   background-color: #26a69a;
   z-index: 0;
 }
 
-[type="  "]:checked + label:after {
+[type="radio"]:checked + label:after {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-/*    With gap */
-[type="  "].with-gap:checked + label:after {
+/* Radio With gap */
+[type="radio"].with-gap:checked + label:after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 
 /* Focused styles */
-[type="  "].tabbed:focus + label:before {
+[type="radio"].tabbed:focus + label:before {
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Disabled    With gap */
-[type="  "].with-gap:disabled:checked + label:before {
+/* Disabled Radio With gap */
+[type="radio"].with-gap:disabled:checked + label:before {
   border: 2px solid rgba(0, 0, 0, 0.26);
 }
 
-[type="  "].with-gap:disabled:checked + label:after {
+[type="radio"].with-gap:disabled:checked + label:after {
   border: none;
   background-color: rgba(0, 0, 0, 0.26);
 }
 
 /* Disabled style */
-[type="  "]:disabled:not(:checked) + label:before,
-[type="  "]:disabled:checked + label:before {
+[type="radio"]:disabled:not(:checked) + label:before,
+[type="radio"]:disabled:checked + label:before {
   background-color: transparent;
   border-color: rgba(0, 0, 0, 0.26);
 }
 
-[type="  "]:disabled + label {
+[type="radio"]:disabled + label {
   color: rgba(0, 0, 0, 0.26);
 }
 
-[type="  "]:disabled:not(:checked) + label:before {
+[type="radio"]:disabled:not(:checked) + label:before {
   border-color: rgba(0, 0, 0, 0.26);
 }
 
-[type="  "]:disabled:checked + label:after {
+[type="radio"]:disabled:checked + label:after {
   background-color: rgba(0, 0, 0, 0.26);
   border-color: #BDBDBD;
 }

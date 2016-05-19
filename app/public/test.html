@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<h1 class="text-center">Hello World</h1>
+
+		<form action="" method="" role="form">
+			<legend>LOGIN</legend>
+		
+			<div class="form-group">
+				<label for="">name</label>
+				<input type="text" class="form-control" id="screenName" placeholder="Screen Name">
+			</div>
+			
+			<div class="form-group">
+				<label for="">password</label>
+				<input type="text" class="form-control" id="password" placeholder="Password">
+			</div>
+			
+		
+			<button id = "loginSubmit" type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<form action="" method="" role="form">
+			<legend>New Member</legend>
+		
+			<div class="form-group">
+				<label for="">name</label>
+				<input type="text" class="form-control" id="newScreenName" placeholder="Screen Name">
+			</div>
+			
+			<div class="form-group">
+				<label for="">password</label>
+				<input type="text" class="form-control" id="newPassword" placeholder="Password">
+			</div>
+			
+		
+			<button id = "newSubmit" type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script type="text/javascript">
+ 			$("#loginSubmit").on('click', function(){
+
+ 			var currentURL = window.location.origin;	
+ 			var player = {
+ 				screenName : $("#screenName").val(),
+ 				password : $("#password").val()
+
+ 			}
+ 	
+
+ 			$.post(currentURL + '/api/playerlogin', player ).success(function(data){
+ 					console.log(data);
+ 				if (typeof data.redirect == 'string'){
+ 						 window.location = data.redirect
+
+ 				}else{
+
+ 					alert("Error: wrong password/screenName")
+ 				}
+                   
+ 				 
+ 				//window.location.replace("http://stackoverflow.com");
+ 			 });	
+ 				
+
+ 			});
+
+ 			$("#newSubmit").on('click', function(){
+
+ 				var currentURL = window.location.origin;
+ 				var newPlayer = {
+ 					screenName : $("#newScreenName").val(),
+ 					password : $("#newPassword").val()
+ 				}
+
+ 				$.post(currentURL + '/api/newMember', newPlayer).success(function(data){
+
+ 				})
+
+ 			})
+ 			
+ 		</script>
+	</body>
+</html>
