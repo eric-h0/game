@@ -63,6 +63,8 @@
 </div>
 <!-- End of social feed -->
 
+
+
 <!-- loginDiv -->
 <div class="row loginDiv animated bounceIn">
     <p class="center-align">Login with your credentials.</p>
@@ -118,34 +120,40 @@
   </div>
           
 
-<!-- Game center -->
+<!-- View Players Button -->
 <div class="row onlinePlayers animated pulse ">
     <div class="col s12 m12">
         <div class="card blue-grey darken-1 z-depth-5">
-            <div class="card-content white-text">
-                <span class="card-title"><center>Gamers online</center></span>
-                <p>
-                    <!-- Run a for-loop in jQuery to assign ID's to each play button. -->
-                    <table class="centered">
-                        <thead>
-                            <tr>
-                                <th data-field="name">Name</th>
-                                <th data-field="playRequest">Send Play Request</th>
-                            </tr>
-                        </thead>
-                        <tbody id="playersTable">
-                        <!-- Online players shoot here -->
-                        </tbody>
-                    </table>
-                </p>
-            </div>
-            <div class="card-action center-align">
-                <a id="randomPlayer" href="#">Random player</a>
-            </div>
+            <img src="/images/viewPlayers.png" class="modal-trigger waves-effect" href="#modal4" width="100%" height="auto">
         </div>
     </div>
 </div>
-<!-- Game -->
+
+<!-- View Players (Modal) -->
+<div id="modal4" class="modal modal-fixed-footer">
+<div class="modal-content">
+     <div class="card-content black-text">
+            <span class="card-title"><center>Gamers online</center></span>
+            <p>
+                <table class="centered">
+                    <thead>
+                        <tr>
+                            <th data-field="name">Username</th>
+                            <th data-field="playRequest">Send Play Request</th>
+                        </tr>
+                    </thead>
+                    <tbody id="playersTable">
+                    </tbody>
+                </table>
+            </p>
+        </div>
+</div>
+<div class="modal-footer">
+  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+</div>
+</div>
+
+  
 
 <!-- Leaderboard button -->
 <div class="row modal-button">

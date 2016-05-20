@@ -2,6 +2,14 @@ html {
   background-color: orange;
 }
 
+canvas { 
+  display: block; 
+  margin: 0 auto; 
+  background: #fff; 
+  width: 100%
+}
+
+
 /*Instead of flashing a white screen, an orange screen is shown while the page loads.*/
 div#load_screen{
   background: orange;
