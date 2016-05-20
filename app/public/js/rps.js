@@ -4,7 +4,6 @@ var computer;
 $('.choice').click(function() {
   user = this.id;
   computer = Math.random();
-
   if (computer <= 1 / 3) {
     computer = "charmander";
   } else if (computer < 2 / 3) {
@@ -13,7 +12,6 @@ $('.choice').click(function() {
     computer = "squirtle";
   }
   var winner = compare(user, computer);
-  console.log(winner);
   $("h6").html(winner.str);
   $('.choice').css("box-shadow", "none");
   if (winner.ner == "tie") {
@@ -23,7 +21,6 @@ $('.choice').click(function() {
   } else {
     $(this).css("box-shadow", "0px 0px 1px 1px #E32B09");
   }
-
 });
 
 var compare = function(user, computer) {
@@ -43,6 +40,10 @@ var compare = function(user, computer) {
     if (computer === "bulbasaur") {
       obj.str = charmander + " " + win;
       obj.ner = "win";
+      points + 50;
+      // MYSQL
+      console.log(points)
+
     } else {
       obj.str = squirtle + " " + lose;
       obj.ner = "lose";
@@ -51,6 +52,10 @@ var compare = function(user, computer) {
     if (computer === "charmander") {
       obj.str = squirtle + " " + win;
       obj.ner = "win";
+      points + 50;
+      // MYSQL
+      console.log(points)
+
     } else {
       obj.str = bulbasaur + " " + lose;
       obj.ner = "lose";
@@ -62,6 +67,10 @@ var compare = function(user, computer) {
     } else {
       obj.str = bulbasaur + " " + win;
       obj.ner = "win";
+      points + 50;
+      // MYSQL
+      console.log(points)
+
     }
   }
 
