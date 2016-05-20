@@ -31,14 +31,6 @@ div#load_screen > div#loading{
   color: white;
 }
 
-.modal-trigger {
-  width: 100%
-}
-
-.modal-footer {
-  background-color: gray
-}
-
 #chat-container,
 #loginform {
     margin: 0 auto;
@@ -56,6 +48,18 @@ div#load_screen > div#loading{
     padding: 10px;
 }
 
+#messageInput {
+    width: 180px;
+    height: 28px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#menu {
+    padding: 12.5px 25px 12.5px 25px;
+}
+
 .chat-messages {
     text-align: left;
     margin: 0 auto;
@@ -70,20 +74,16 @@ div#load_screen > div#loading{
     color: black;
 }
 
-#messageInput {
-    width: 180px;
-    height: 28px;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
 .messages {
     margin-top: -10px;
 }
 
-#menu {
-    padding: 12.5px 25px 12.5px 25px;
+.modal-trigger {
+  width: 100%
+}
+
+.modal-footer {
+  background-color: gray
 }
 
 .msgln {
