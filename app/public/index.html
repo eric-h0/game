@@ -92,11 +92,31 @@
             </span>
             <!-- Submit button for login -->
             <div class="card-action center-align">
-                <a id="createSubmit" href="#">Submit</a>
+                <a id="createSubmit" class="modal-trigger" href="#modal3">Submit</a>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Confirm Div -->
+  <div id="modal3" class="modal modal-fixed-footer confirmModal">
+    <div class="modal-content center-align">
+      <p>
+      Thank you for creating an account!<br><br>
+      Please login with your credentials.</p>
+      <br><br><br>
+      <img src="/images/welcome.gif" width="100%" height="auto">
+      <br><br><br><br>
+      ...and welcome to Battleground!
+      <br><br>
+      -With love,<br>
+      Eric, Al and Adam.
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red center-align btn-flat">Take me to login!</a>
+    </div>
+  </div>
+          
 
 <!-- Game center -->
 <div class="row onlinePlayers animated pulse ">

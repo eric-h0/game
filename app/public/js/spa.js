@@ -117,23 +117,25 @@ messagesRef.limitToLast(20).on('child_added', function(snapshot) {
     });
 });
 
-    $("#createSubmit").on('click', function() {
-        if ($("#newPassword").val() == $("#confirmPassword").val()) {
-            var currentURL = window.location.origin;
-            var newPlayer = {
-                screenName: $("#newScreenName").val(),
-                password: $("#newPassword").val()
-            }
-
-            $.post(currentURL + '/api/newMember', newPlayer).success(function(data) {
-
-            })
-
-        } else {
-
-            alert("invalid password");
+$("#createSubmit").on('click', function() {
+    if ($("#newPassword").val() == $("#confirmPassword").val()) {
+        $(".createDiv").hide();
+        $(".loginDiv").show();
+        var currentURL = window.location.origin;
+        var newPlayer = {
+            screenName: $("#newScreenName").val(),
+            password: $("#newPassword").val()
         }
-    });
+
+        $.post(currentURL + '/api/newMember', newPlayer).success(function(data) {
+
+        })
+
+    } else {
+
+        alert("invalid password");
+    }
+});
 
     function getPlayers() {
         var currentURL = window.location.origin;
