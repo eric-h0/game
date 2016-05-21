@@ -44,19 +44,28 @@
 <!-- Card title -->
 <h3 class="center-align welcomeCenter animated pulse"><img class="z-depth-5 icon" width="100%" height="auto" src="/images/photo-main.png"></h3>
 
-<!--   <a class="waves-effect waves-light btn modal-trigger" href="#modal5">Game</a>
 
   <div id="modal5" class="modal">
     <div class="modal-content">
         <div id="gameThing" width="100%" height="auto">
-      <canvas></canvas>
+      <header>
+          <div class = "wrapper">
+          <h6 align="center">Choose your Pokémon!</h6><br>
+          </div>
+        </header>
+        <section class = "selections center-align">
+          <div class="choice" id="charmander"><img height="160px" class="choice" width="auto" src="/images/charmander.gif"></div>
+          <div class="choice" id="squirtle"><img height="160px" width="auto" src="/images/squirtle.gif"></div>
+          <div class="choice" id="bulbasaur"><img height="160px" width="auto" src="/images/bulbasaur.gif"></div>
+        </section>
+
       </div>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
     </div>
   </div>
-           -->
+          
 
 
              
@@ -169,8 +178,6 @@
 </div>
 
 
-  
-
 <!-- Leaderboard button -->
 <div class="row modal-button">
     <div class="col s12"></div>
@@ -234,13 +241,24 @@
         <div id="chat-container">
             <div class='chat-menu'>
                 <ul id='messages' class="chat-messages"></ul>
-                <label for="nameInput" class="messages">Message:</label>
-                <input type='text' id='messageInput' placeholder='Type a Message...'>
+                <label id="messageLabel" for="nameInput" class="messages">Message:</label>
+                <input type='text' id='messageInput' placeholder=' Get some trash talk going...'>
             </div>
         </div>
     </div>
 </div>
       
+<!-- Pokemon game button -->
+<div class="row modal-button chatButton">
+    <div class="col s12"></div>
+    <div class="col s12 m4 l2"></div>
+    <div class="col s12 m4 l8">
+    <p>
+    <a class="waves-effect waves-light btn modal-trigger z-depth-5" href="#modal5">Game</a>
+    </p>
+    </div>
+    <div class="col s12 m4 l2"></div>
+</div>
 
 
 
